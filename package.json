@@ -1,0 +1,37 @@
+{
+  "name": "tranhslogan-content-generator",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "AI Content Generation Tool for TranhSlogan.vn using GPT-4o",
+  "main": "src/worker.js",
+  "scripts": {
+    "lint": "eslint \"{src,apps,libs,test}/**/*.js\" --fix",
+    "start": "node run-worker.js",
+    "worker": "node src/worker.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sparticuz/chromium": "^123.0.1",
+    "axios": "^1.12.2",
+    "cheerio": "^1.0.0-rc.12",
+    "child_process": "^1.0.2",
+    "cluster": "^0.7.7",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.5",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "playwright": "^1.43.1",
+    "puppeteer": "^22.7.1",
+    "puppeteer-real-browser": "^1.2.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "9.x",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "globals": "^15.3.0",
+    "prettier": "3.2.5"
+  }
+}
